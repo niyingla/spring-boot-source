@@ -10,8 +10,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MyBeanRegister implements BeanDefinitionRegistryPostProcessor {
+
+
     @Override
     public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) throws BeansException {
+        //实现注册方法 注入对象
         RootBeanDefinition rootBeanDefinition = new RootBeanDefinition();
         rootBeanDefinition.setBeanClass(Monkey.class);
         registry.registerBeanDefinition("monkey", rootBeanDefinition);

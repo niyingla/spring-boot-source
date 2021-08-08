@@ -5,7 +5,7 @@ import com.mooc.sb2.ioc.xml.Cat;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class MyCat implements FactoryBean<Animal> {
     @Override
     public Animal getObject() throws Exception {

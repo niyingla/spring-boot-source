@@ -2,6 +2,7 @@ package com.mooc.sb2;
 
 import com.mooc.sb2.bean.Demo;
 import com.mooc.sb2.condi.A;
+import com.mooc.sb2.ioc.ann.MyBeanImport;
 import com.mooc.sb2.mapper.DemoMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,10 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {Sb2Application.class})
+//@Import(MyBeanImport.class)
 public class Sb2ApplicationTests implements ApplicationContextAware {
 
     private ApplicationContext applicationContext;

@@ -14,6 +14,7 @@ public class FirstInitializer implements ApplicationContextInitializer<Configura
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
         ConfigurableEnvironment environment = applicationContext.getEnvironment();
+        //设置上下文必备属性 spring启动时 会校验 没有会报错
         environment.setRequiredProperties("mooc");
 //        Map<String, Object> map = new HashMap<>();
 //        map.put("key1", "value1");
