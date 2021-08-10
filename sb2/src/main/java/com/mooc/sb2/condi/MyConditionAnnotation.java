@@ -7,6 +7,7 @@ import java.lang.annotation.*;
 @Target({ ElementType.TYPE, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
+//指定匹配配置类
 @Conditional(MyCondition.class)
 public @interface MyConditionAnnotation {
 
