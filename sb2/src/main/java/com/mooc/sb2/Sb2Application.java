@@ -10,7 +10,7 @@ import java.util.Properties;
 @SpringBootApplication
 @MapperScan("com.mooc.sb2.mapper")
 //手动引入配置
-//@PropertySource("demo.properties")
+@PropertySource("demo.properties")
 public class Sb2Application {
 
 	public static void main(String[] args) {
