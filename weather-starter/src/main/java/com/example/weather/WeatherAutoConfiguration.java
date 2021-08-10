@@ -9,7 +9,9 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+//启用这个配置类
 @EnableConfigurationProperties(WeatherSource.class)
+//判断是否启用当前Configuration
 @ConditionalOnProperty(name = "weather.enble",havingValue = "enable")
 public class WeatherAutoConfiguration {
     @Autowired
